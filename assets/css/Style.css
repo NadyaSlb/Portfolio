@@ -1,6 +1,6 @@
 :root {
---primary-color:
---secondary-color:
+--primary-color: #191970;
+--secondary-color: #48D1CC;
 --tertiary-color:
 }
 
@@ -12,8 +12,8 @@ body {
 /* Header styles start */
 
 header {
-    background-color: #191970;
-    margin: 50px 0 50px 0;
+    background-color: var(--primary-color);
+    margin: 50px 0 0 0;
     padding: 10px 10px 0 0;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    background-color: #48D1CC;
+    background-color: var(--secondary-color);
     float: left;
     padding: 8px 8px 8px 80px;
     margin: 0 0 8px 0;
@@ -34,7 +34,7 @@ header h1 {
 
 header h1 a {
     text-decoration: none;
-    color: #191970;
+    color: var(--primary-color);
 }
 
 header nav{
@@ -44,7 +44,7 @@ header nav{
 header nav ul li a {
     padding: 0 15px;
     text-decoration: underline;
-    color: #48D1CC;
+    color: var(--secondary-color);
     font-size: 1.55vw;
 }
 
@@ -57,3 +57,28 @@ header nav ul {
 }
 
 /* Header styles end */
+
+/* Hero section styles start */
+.hero {
+    background-image: url('../images/istockphoto-1135911226-170667a.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin:0 0 50px;
+}
+
+.hero h2 {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: var(--secondary-color);
+    float: right;
+    padding: 8px;
+    margin: 150px 30px 20px 0;
+    color: var(--primary-color);
+}
+
+/* Hero section styles end */
