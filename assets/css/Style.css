@@ -82,3 +82,36 @@ header nav ul {
 }
 
 /* Hero section styles end */
+
+/* About section styles start */
+
+.about {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.about h2 {
+    margin: 0;
+}
+
+.about-header {
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 3vw;
+    border-right: var(--primary-color) solid;
+    padding-right: 15px;
+    margin: 2%;
+}
+
+.about-text {
+    width: 70%;
+    text-align: left;
+    padding: 0 0 0 20px;
+    margin: 2%;
+}
