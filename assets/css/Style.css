@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F0FFFF;
+    background-color: #F0F8FF;
 }
 
 /* Header styles start */
@@ -88,14 +88,15 @@ header nav ul {
 .about {
     color: var(--primary-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    position: relative;
 }
 
-.about h2 {
+.about h2{
     margin: 0;
 }
 
@@ -103,15 +104,147 @@ header nav ul {
     width: 15%;
     text-align: right;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2.5vw;
     border-right: var(--primary-color) solid;
     padding-right: 15px;
     margin: 2%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .about-text {
-    width: 70%;
+    width: 60%;
     text-align: left;
-    padding: 0 0 0 20px;
-    margin: 2%;
+    padding:0;
+    margin: 1% 2% 2% 1%;
 }
+
+/* About section styles end */
+
+/* Work section styles start */
+
+.works {
+width: 60%;
+padding: 0;
+margin: 2% 2% 2% 1%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.works h3 {
+    background-color: var(--secondary-color);
+    margin-bottom: 0;
+    width: 20;
+    padding: 2px;
+}
+
+.works p {
+    background-color: var(--secondary-color);
+    margin-top: 0;
+    padding: 2px;
+}
+
+.surf {
+    border: var(--secondary-color) solid 4px;
+    background-image: url('../images/5842041f4e65fad6a7708a38_1500.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.surf h3 {
+    position: relative;
+    width: 160px;
+    top: 300px;
+} 
+
+.surf p {
+    position: relative;
+    width: 160px;
+    top: 300px;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.small-boxes {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.led {
+    border: var(--secondary-color) solid 4px;
+    background-image: url('../images/led-background-3.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: block;
+    width: 47%;
+    height: 200px;
+    position: relative;
+    margin: 10px 10px 10px 0;
+}
+
+.calc {
+    border: var(--secondary-color) solid 4px;
+    background-image: url('../images/images.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: block;
+    width: 47%;
+    height: 200px;
+    position: relative;
+    margin: 10px 0 10px 10px;
+}
+
+.pastel {
+    border: var(--secondary-color) solid 4px;
+    background-image: url('../images/download.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: block;
+    width: 47%;
+    height: 200px;
+    position: relative;  
+    margin: 0 30px 20px 0;
+    margin: 10px 10px 10px 0;
+}
+
+.run {
+    border: var(--secondary-color) solid 4px;
+    background-image: url('../images/Screenshot\ 2022-04-12\ 20.00.50.png');
+    background-size: cover;
+    background-position: center; 
+    display: block;
+    width: 47%;
+    height: 200px;
+    position: relative;  
+    margin: 10px 0 10px 10px;
+}
+
+.small-boxes h3 {
+    position: relative;
+    width: 160px;
+    top: 110px;
+}
+
+.small-boxes p {
+    position: relative;
+    width: 160px;
+    top: 110px;
+}
+
+/* Work section styles end */
+
+/* Contact section styles start */
