@@ -4,6 +4,12 @@
 --tertiary-color:
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F0F8FF;
@@ -69,6 +75,7 @@ header nav ul {
     background-attachment: fixed;
     background-position: 80%;
     margin:0 0 50px;
+    position: relative;
 }
 
 .hero h2 {
@@ -79,6 +86,14 @@ header nav ul {
     padding: 8px;
     margin: 150px 30px 20px 0;
     color: var(--primary-color);
+}
+
+.hero img {
+    position: absolute;
+    left: 85px;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--secondary-color);
 }
 
 /* Hero section styles end */
@@ -138,7 +153,7 @@ justify-content: space-between;
 .works h3 {
     background-color: var(--secondary-color);
     margin-bottom: 0;
-    width: 20;
+    width: 20px;
     padding: 2px;
 }
 
@@ -156,6 +171,12 @@ justify-content: space-between;
     width: 100%;
     height: 400px;
     position: relative;
+    opacity: 0.9;
+}
+
+.surf:hover {
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 .surf h3 {
@@ -168,6 +189,7 @@ justify-content: space-between;
     position: relative;
     width: 160px;
     top: 300px;
+    opacity: 1;
 }
 
 .image {
@@ -184,6 +206,11 @@ justify-content: space-between;
     justify-content: space-between;
 }
 
+.led:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
 .led {
     border: var(--secondary-color) solid 4px;
     background-image: url('../images/led-background-3.jpg');
@@ -194,6 +221,7 @@ justify-content: space-between;
     height: 200px;
     position: relative;
     margin: 10px 10px 10px 0;
+    opacity: 0.9;
 }
 
 .calc {
@@ -205,7 +233,13 @@ justify-content: space-between;
     width: 47%;
     height: 200px;
     position: relative;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 0px;
+    opacity: 0.9;
+}
+
+.calc:hover {
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 .pastel {
@@ -219,6 +253,12 @@ justify-content: space-between;
     position: relative;  
     margin: 0 30px 20px 0;
     margin: 10px 10px 10px 0;
+    opacity: 0.9;
+}
+
+.pastel:hover {
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 .run {
@@ -230,7 +270,13 @@ justify-content: space-between;
     width: 47%;
     height: 200px;
     position: relative;  
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 0px;
+    opacity: 0.9;
+}
+
+.run:hover {
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 .small-boxes h3 {
@@ -248,3 +294,128 @@ justify-content: space-between;
 /* Work section styles end */
 
 /* Contact section styles start */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    width: 60%;
+    height: 160px;
+    align-items: center;
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0;
+    list-style: none;
+    text-decoration:underline;
+    color: var(--primary-color);
+    padding: 60px 10px 0 0;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.contacts a {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Contact section styles end */
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        padding-left: 50px;
+    }
+
+    .contacts ul {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    .contacts a {
+        font-size: 15px;
+    }
+
+    .contacts {
+        height: 100px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header h1 {
+        padding-left: 10px;
+    }
+
+    .hero img {
+        left: 10px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+    .surf {
+        height: 200px;
+    }
+
+    .surf h3 {
+        top: 130px;
+    }
+
+    .surf p {
+        top: 130px;
+    }
+
+    .led {
+        height: 150px;
+    }
+
+    .calc {
+        height: 150px;
+    }
+
+    .pastel {
+        height: 150px;
+    }
+
+    .run {
+        height: 150px;
+    }
+
+    .small-boxes h3 {
+        top: 85px;
+    }
+
+    .small-boxes p {
+        top: 85px;
+        font-size: 1.55vw;
+        width: 140px;
+
+    }
+
+    .small-boxes h3 {
+        width: 140px;
+    }
+
+    .contacts ul {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .contacts a {
+        font-size: 12px;
+    }
+
+    .contacts {
+        height: 70px;
+        align-items: unset;
+    }
+}
