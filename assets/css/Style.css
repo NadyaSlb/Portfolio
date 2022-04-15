@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    margin: 50px 0 0 0;
+    margin: 0;
     padding: 10px 10px 0 0;
     display: flex;
     justify-content: space-between;
@@ -103,12 +103,10 @@ header nav ul {
 .about {
     color: var(--primary-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .about h2{
@@ -122,19 +120,13 @@ header nav ul {
     font-size: 2.5vw;
     border-right: var(--primary-color) solid;
     padding-right: 15px;
-    margin: 2%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 }
 
 .about-text {
-    width: 60%;
+    width: 84%;
     text-align: left;
-    padding:0;
-    margin: 1% 2% 2% 1%;
+    padding-top: 20px;
+    line-height: 1.5;
 }
 
 /* About section styles end */
@@ -142,9 +134,7 @@ header nav ul {
 /* Work section styles start */
 
 .works {
-width: 60%;
-padding: 0;
-margin: 2% 2% 2% 1%;
+width: 84%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -300,8 +290,8 @@ justify-content: space-between;
 }
 
 .contacts {
-    width: 60%;
-    height: 160px;
+    width: 84%;
+    height: 80px;
     align-items: center;
 }
 
@@ -313,7 +303,7 @@ justify-content: space-between;
     list-style: none;
     text-decoration:underline;
     color: var(--primary-color);
-    padding: 60px 10px 0 0;
+    padding: 30px 20px 0 20px;
     font-weight: bold;
     font-size: 20px;
 
