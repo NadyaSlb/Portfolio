@@ -72,7 +72,6 @@ header nav ul {
     justify-content: right;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
     background-position: 80%;
     margin:0 0 50px;
     position: relative;
@@ -86,6 +85,7 @@ header nav ul {
     padding: 8px;
     margin: 150px 30px 20px 0;
     color: var(--primary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
 }
 
 .hero img {
@@ -190,10 +190,10 @@ justify-content: space-between;
 
 .small-boxes {
     width: 100%;
-    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
 }
 
 .led:hover {
@@ -207,7 +207,7 @@ justify-content: space-between;
     background-size: cover;
     background-position: center; 
     display: block;
-    width: 47%;
+    width: 49%;
     height: 200px;
     position: relative;
     margin: 10px 10px 10px 0;
@@ -220,7 +220,7 @@ justify-content: space-between;
     background-size: cover;
     background-position: center; 
     display: block;
-    width: 47%;
+    width: 49%;
     height: 200px;
     position: relative;
     margin: 10px 0 10px 0px;
@@ -238,7 +238,7 @@ justify-content: space-between;
     background-size: cover;
     background-position: center; 
     display: block;
-    width: 47%;
+    width: 49%;
     height: 200px;
     position: relative;  
     margin: 0 30px 20px 0;
@@ -257,7 +257,7 @@ justify-content: space-between;
     background-size: cover;
     background-position: center; 
     display: block;
-    width: 47%;
+    width: 49%;
     height: 200px;
     position: relative;  
     margin: 10px 0 10px 0px;
@@ -344,12 +344,20 @@ justify-content: space-between;
         padding-left: 10px;
     }
 
+    header nav ul li a {
+        font-size: 4vw;
+    }
+
     .hero img {
         left: 10px;
     }
 
     .hero h2 {
-        font-size: 20px;
+        font-size: 1.55vw;
+    }
+
+    .about-text {
+        padding: 0;
     }
     .surf {
         height: 200px;
@@ -364,27 +372,35 @@ justify-content: space-between;
     }
 
     .led {
-        height: 150px;
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .calc {
-        height: 150px;
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .pastel {
-        height: 150px;
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .run {
-        height: 150px;
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .small-boxes h3 {
-        top: 85px;
+        top: 130px;
     }
 
     .small-boxes p {
-        top: 85px;
+        top: 130px;
         font-size: 1.55vw;
         width: 140px;
 
@@ -395,17 +411,35 @@ justify-content: space-between;
     }
 
     .contacts ul {
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 20px;
-        font-size: 12px;
+        font-size: 3vw;
+        line-height: 1.5;
+        margin-right: 3%;
+
     }
 
     .contacts a {
-        font-size: 12px;
+        font-size: 3vw;
+        line-height: 1.5;
     }
 
     .contacts {
-        height: 70px;
-        align-items: unset;
+        height: 30px;
+    }
+
+    .hero {
+        justify-content: space-between;
+    }
+
+    .hero img {
+        top: 5px;
+        bottom: 5px;
+    }
+
+    .hero h2 {
+        font-size: 15px;
+        float: left;
+        margin: 210px 0 10px 10px;
     }
 }
