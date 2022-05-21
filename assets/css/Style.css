@@ -155,7 +155,7 @@ justify-content: space-between;
 
 .surf {
     border: var(--secondary-color) solid 4px;
-    background-image: url('../images/5842041f4e65fad6a7708a38_1500.jpg');
+    background-image: url('../images/Screenshot_1.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -171,13 +171,13 @@ justify-content: space-between;
 
 .surf h3 {
     position: relative;
-    width: 160px;
+    width: 220px;
     top: 300px;
 } 
 
 .surf p {
     position: relative;
-    width: 160px;
+    width: 220px;
     top: 300px;
     opacity: 1;
 }
