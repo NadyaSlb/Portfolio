@@ -203,7 +203,7 @@ justify-content: space-between;
 
 .led {
     border: var(--secondary-color) solid 4px;
-    background-image: url('../images/led-background-3.jpg');
+    background-image: url('../images/Screenshot_3.jpg');
     background-size: cover;
     background-position: center; 
     display: block;
@@ -271,14 +271,14 @@ justify-content: space-between;
 
 .small-boxes h3 {
     position: relative;
-    width: 160px;
-    top: 110px;
+    width: 225px;
+    top: 80px;
 }
 
 .small-boxes p {
     position: relative;
-    width: 160px;
-    top: 110px;
+    width: 225px;
+    top: 80px;
 }
 
 /* Work section styles end */
@@ -443,3 +443,6 @@ justify-content: space-between;
         margin: 210px 0 10px 10px;
     }
 }
+
+.test {color: red;
+font-weight: bold;}
